@@ -1,0 +1,30 @@
+name 's6-dns'
+org 'amylum'
+
+licenses 'COPYING'
+
+deps(
+  skalibs: '2.3.10.0-40',
+  'linux-api-headers': '4.8-rc6-2'
+)
+
+configure_flags(
+  prefix: '/usr',
+  'with-include': "#{dep(:skalibs)}/usr/include",
+  'with-lib': "#{dep(:skalibs)}/usr/lib/skalibs",
+  'with-dynlib': "#{dep(:skalibs)}/usr/lib",
+  'with-sysdeps': "#{dep(:skalibs)}/usr/lib/skalibs/sysdeps"
+)
+
+cflags
+harden
+
+build do
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end

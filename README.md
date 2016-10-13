@@ -1,6 +1,8 @@
 s6-dns
 =========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/s6-dns/master.svg)](https://circleci.com/gh/amylum/s6-dns)
+[![GitHub release](https://img.shields.io/github/release/amylum/s6-dns.svg)](https://github.com/amylum/s6-dns/releases)
 [![ISC Licensed](https://img.shields.io/badge/license-ISC-green.svg)](https://tldrlegal.com/license/-isc-license)
 
 This is my package repo for [s6-dns](http://www.skarnet.org/software/s6-dns/), a set of network librarys and tools by [Laurent Bercot](http://skarnet.org/).
